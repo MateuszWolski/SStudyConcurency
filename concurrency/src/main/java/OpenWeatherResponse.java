@@ -47,4 +47,9 @@ public class OpenWeatherResponse {
     public void setWind(Wind wind) {
         this.wind = wind;
     }
+
+    @Override
+    public String toString() {
+        return String.format("City: %s, temp: %s", name, main.getTemp());
+    }
 }
